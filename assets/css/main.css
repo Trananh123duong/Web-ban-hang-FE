@@ -30,6 +30,15 @@
     font-weight: 300;
 }
 
+/* Các thay đổi khi đưa chuột tới những thẻ có class sau  */
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    /* Tự đổi con trỏ chuột thành hình bàn tay khi rê chuột tới */
+    cursor: pointer;
+    /* Tự đổi màu khi rê chuột tới */
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .header__navbar-item-strong {
     /* tô đậm chữ */
     font-weight: 400;
@@ -44,4 +53,11 @@
     right: -9px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+    /* Chuyển màu icon thành màu trắng */
+    color: var(--white-color);
+    /* Bỏ gạch chân icon */
+    text-decoration: none;
 }
