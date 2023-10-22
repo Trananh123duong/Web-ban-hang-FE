@@ -20,6 +20,11 @@
     min-height: 26px;
 }
 
+/* Khi đưa con trỏ chuột tới thì show ra css header__qr của qr */
+.header__navbar-item--has-qr:hover .header__qr {
+    display: block;
+}
+
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
@@ -87,8 +92,21 @@
     background-color: var(--white-color);
     position: absolute;
     left: 0;
-    top: 100%;
+    top: 110%;
     border-radius: 2px;
+    display: none;
+    /* qr hiện dần trong 1s */
+    animation: fadeIn ease-in 1s;
+}
+
+.header__qr::before {
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+    content: "";
+    display: block;
 }
 
 .header__qr-img {
