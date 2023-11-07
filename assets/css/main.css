@@ -335,6 +335,11 @@
     outline: none;
 }
 
+.header__search-btn:hover {
+    cursor: pointer;
+    background-color: #fb6445;
+}
+
 .header__search-btn-icon {
     font-size: 1.4rem;
     color: var(--white-color);
