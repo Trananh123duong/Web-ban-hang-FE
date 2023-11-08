@@ -286,8 +286,14 @@
     align-items: center;
 }
 
-.header__search-input {
+.header__search-input-wrap {
     flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.header__search-input {
+    width: 100%;
     height: 100%;
     border: none;
     outline: none;
@@ -408,4 +414,15 @@
 
 .header__search-option-item--active i {
     display: inline-block;
+}
+
+/* Search history */
+.header__search-history {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: calc(100% - 16px);
+    background-color: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px #666;
 }
